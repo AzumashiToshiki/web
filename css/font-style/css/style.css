@@ -25,3 +25,15 @@
     text-align: center;
     line-height: 160%;
 }
+
+#pra {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: coral;
+    font-family: serif;
+}
+
+#input1 {
+    text-align: center;
+}
