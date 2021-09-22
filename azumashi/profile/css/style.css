@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+html {
+    font-size: 150%;
+    width: 80%;
+    margin: auto;
+    font-family: 'メイリオ', Meiryo,serif;
+    background-color:#dbdfe1;
+}
+body {
+    color: #383e45;
+    font-size: 0.9rem;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+    margin: 1rem 1.5rem;
+}
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    margin: 0 0;
+    padding: 0 4%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 58px;
+    background: #edf1f2;
+    box-shadow:  17px 17px 26px #a4a6a7,
+    -17px -17px 26px #ffffff;
+    font-family: 'RocknRoll One', sans-serif;
+}
+#header ul {
+    display: flex;
+    padding: 10px 0;
+}
+#header li {
+    font-size: 1.3rem;
+    margin-left: 30px;
+}
+#header li a {
+    color: #24292e;
+}
+#header a::after {
+    border-bottom: solid 5px #000;
+    bottom: 0;
+    content: "";
+    display: block;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    width: 0;
+}
+#header a:hover::after {
+    width: 100%;
+}
+.site-title {
+    width: 120px;
+    line-height: 1px;
+    padding: 10px 0;
+    font-size: 2rem;
+}
+.site-title a {
+    display: block;
+}
+/*-------------------------------------------
+carousel
+-------------------------------------------*/
+#carouselExampleIndicators {
+    height: 55%;
+    width: 55%;
+    margin: 1em auto;
+}
+/*-------------------------------------------
+about
+-------------------------------------------*/
+#about .content {
+    display: flex;
+    flex-direction: column;
+}
+/*-------------------------------------------
+images
+-------------------------------------------*/
+#images{
+    margin-top: 20px;
+}
+#images ul {
+    display: flex;
+}
+#images li {
+    width: 50%;
+    height: 100%;
+}
+#images img{
+    width: 100%;
+    height: 100%;
+}
+.sec-title {
+    font-size: 1.5rem;
+    border-radius: 58px;
+    background: #edf1f2;
+    box-shadow:  17px 17px 26px #a4a6a7,
+    -17px -17px 26px #ffffff;
+}
+/*-------------------------------------------
+images2
+-------------------------------------------*/
+#images2{
+    margin-top: 20px;
+}
+#images2 ul {
+    display: flex;
+}
+#images2 li {
+    width: 50%;
+    height: 100%;
+}
+#images2 img{
+    width: 100%;
+    height: 100%;
+}
+/*-------------------------------------------
+images3
+-------------------------------------------*/
+#images3{
+    margin-top: 20px;
+}
+#images3 ul {
+    display: flex;
+}
+#images3 li {
+    width: 50%;
+    height: 100%;
+}
+#images3 img{
+    width: 100%;
+    height: 100%;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+    font-size: 0.5rem;
+    padding: 10px 0;
+    text-align: center;
+}
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width:480px) {
+    .site-title{
+        font-size: 1rem;
+    }
+    #header li {
+        font-size: 0.7rem;
+    }
+    .sec-title {
+        font-size: 1rem;
+    }
+    #about li {
+        text-align: left;
+        margin: 1rem 0;
+    }
+    #images ul {
+    display: block;
+}
+    #images li {
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+}
+}
