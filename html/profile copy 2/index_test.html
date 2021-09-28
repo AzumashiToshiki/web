@@ -5,14 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Sample</title>
-    <!-- BootstrapのCSS読み込み -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <!-- BootstrapのJS読み込み -->
-    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <button type="button" class="btn btn-primary mt-3">おにちゃん塾で学ぶBootstrapの使い方</button>
-    <!-- jQueryの読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<main>
+    <body>
+        <section id="images">
+            <div id="container">
+                <h2 class="sec-title">&emsp;詳細1</h2>
+                <article>
+                    <ul>
+                        <a href="./img/lettuce1.jfif">
+                            <li><img src="./img/lettuce1.jfif" alt="lettuce1"></li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <li><img src="./img/lettuce2.jpg" alt="lettuce2"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="./img/lettuce4.jfif" alt="lettuce4"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="./img/lettuce5.jpg" alt="lettuce5"></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+</main>
+<!-- フルスクリーン -->
+<link href="./css/jquery-fullsizable.css" rel="stylesheet" media="all" type="text/css" />
+<link href="./css/jquery-fullsizable-theme.css" rel="stylesheet" media="all" type="text/css" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="./js/jquery-fullsizable.min.js"></script>
+<script>
+    $(function () {
+        $('a.fullsizable').fullsizable();
+    });
+</script>
 </body>
 </html>

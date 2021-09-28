@@ -5,127 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    <!-- Bootstrap （カルーセル）-->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-    <!-- RocknRoll+One -->
+        crossorigin="anonymous"></script> -->
+    <!-- RocknRoll+One（フォント） -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
     <!-- mycss -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- フルスクリーン -->
+    <link href="./css/jquery-fullsizable.css" rel="stylesheet" media="all" type="text/css" />
+    <link href="./css/jquery-fullsizable-theme.css" rel="stylesheet" media="all" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery-fullsizable.min.js"></script>
+    <script>
+        $(function () {
+            $('a').fullsizable({
+                detach_id: 'container',
+                detach_id: 'container2',
+                detach_id: 'container3',
+                loop: true
+            });
+        });
+    </script>
 </head>
 <body>
     <header id="header">
         <h1 class="site-title">Profile</h1>
         <nav>
-            <ul>
-                <li><a href="#index">概要</a></li>
-                <li><a href="#images">詳細</a></li>
-                <li><a href="#images2">詳細2</a></li>
-                <li><a href="#images3">詳細3</a></li>
-            </ul>
         </nav>
+        <!-- 画像拡大 -->
+        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+            type="text/javascript"></script> -->
     </header>
     <main>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/gld1.jfif" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/inu.jfif" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/pluto.jfif" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
+        <div class="main-img">
+            <img src="./img/dari.jpg" alt="main-img">
         </div>
         <section id="about">
             <div class="content">
                 <h2 class="sec-title">&emsp;概要</h2>
                 <ul>
-                    <li>上の画像では、自分がやったゲームのリストになります。</li>
-                    <li>これは例えばCDラックや本棚を見れば、その人がどういう人かなんとなくわかるかと思います。</li>
-                    <li>このリストで自分がどういう人かわかってもらえれば嬉しいです。</li>
+                    <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </li>
                 </ul>
             </div>
         </section>
         <section id="images">
-            <div>
-                <h2 class="sec-title">&emsp;詳細</h2>
-                <article class="img-list">
+            <div id="container">
+                <h2 class="sec-title">&emsp;詳細1</h2>
+                <article>
                     <ul>
-                        <li><img src="./img/inu.jfif" alt="img1"></li>
-                        <li>fighting game
-                        </li>
+                        <a href="./img/lettuce1.jfif">
+                            <li><img src="./img/lettuce1.jfif" alt="lettuce1"></li>
+                        </a>
                     </ul>
                     <ul>
-                        <li><img src="./img/pluto.jfif" alt="img2"></li>
-                        <li>QuizKnock</li>
+                        <a href="./img/lettuce2.jpg">
+                            <li><img src="./img/lettuce2.jpg" alt="lettuce2"></li>
+                        </a>
                     </ul>
                     <ul>
-                        <li><img src="./img/gld1.jfif" alt="img3"></li>
-                        <li>My News</li>
+                        <a href="./img/lettuce4.jfif">
+                            <li><img src="./img/lettuce4.jfif" alt="lettuce4"></li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="./img/lettuce5.jpg">
+                            <li><img src="./img/lettuce5.jpg" alt="lettuce5"></li>
+                        </a>
                     </ul>
                 </article>
+                <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </li>
+                <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </li>
             </div>
         </section>
         <section id="images2">
-            <div>
+            <div id="container2">
                 <h2 class="sec-title">&emsp;詳細2</h2>
-                <article class="img-list">
+                <article>
                     <ul>
-                        <li><img src="./img/inu.jfif" alt="img1"></li>
-                        <li>
-                        </li>
+                        <a href="./img/mps.jpg">
+                            <li><img src="./img/mps.jpg" alt="map"></li>
+                        </a>
                     </ul>
                     <ul>
-                        <li><img src="./img/pluto.jfif" alt="img2"></li>
-                        <li>honnbun</li>
+                        <a href="./img/box.jpg">
+                            <li><img src="./img/box.jpg" alt="box"></li>
+                        </a>
                     </ul>
                     <ul>
-                        <li><img src="./img/gld1.jfif" alt="img3"></li>
-                        <li>honnbun</li>
+                        <a href="./img/box2.jfif">
+                            <li><img src="./img/box2.jfif" alt="box2"></li>
+                        </a>
                     </ul>
                 </article>
+                <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </li>
             </div>
         </section>
         <section id="images3">
             <div>
                 <h2 class="sec-title">&emsp;詳細3</h2>
-                <article class="img-list">
+                <article>
                     <ul>
-                        <li><img src="./img/inu.jfif" alt="img1"></li>
-                        <li>
-                        </li>
+                        <a href="./img/box2.jfif">
+                            <li><img src="./img/zangi.jpg" alt="zangi"></li>
+                        </a>
                     </ul>
                     <ul>
-                        <li><img src="./img/pluto.jfif" alt="img2"></li>
-                        <li>honnbun</li>
+                        <a href="./img/box2.jfif">
+                            <li><img src="./img/pluto.jfif" alt="img2"></li>
+                        </a>
                     </ul>
                     <ul>
-                        <li><img src="./img/gld1.jfif" alt="img3"></li>
-                        <li>honnbun</li>
+                        <a href="./img/box2.jfif">
+                            <li><img src="./img/gld1.jfif" alt="img3"></li>
+                        </a>
                     </ul>
                 </article>
+                <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </li>
             </div>
         </section>
     </main>
@@ -133,7 +142,7 @@
         <p>© 2021 T.Azumashi</p>
     </footer>
     <!-- bootsprap -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
@@ -141,6 +150,6 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 </body>
 </html>

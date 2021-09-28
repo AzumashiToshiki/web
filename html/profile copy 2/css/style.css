@@ -1,275 +1,31 @@
-@charset "UTF-8";
-
-html {
-  font-size: 150%;
-  width: 80%;
-  margin: auto;
-    font-family: 'メイリオ', Meiryo,serif;
-}
-body {
-  color: #383e45;
-  font-size: 0.9rem;
-}
-a {
-  text-decoration: none;
-}
-img {
-  max-width: 100%;
-}
-
-li {
-  list-style: none;
-  margin: 1rem 1.5rem;
-}
-.site-title {
-  width: 120px;
-  line-height: 1px;
-  padding: 10px 0;
-  font-size: 2rem;
-}
-.site-title a {
-  display: block;
-}
-.sec-title {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 60px;
-  border-bottom: solid 1px #383e45;
-}
-.content-title {
-  font-size: 1rem;
-  margin: 10px 0;
-}
-/* .wrapper {
-  max-width: 960px;
-  margin: 0 auto 100px auto;
-  padding: 0 4%;
-} */
-
-/* .inline-block {
-    display: block;
-} */
-
-/*-------------------------------------------
-ヘッダー
--------------------------------------------*/
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 75px;
-  margin: 0 0;
-  padding: 0 4%;
-  position: sticky;
-  top: 0;
-  background-color: rgb(252, 243, 232);
-        font-family: 'RocknRoll One', sans-serif;
-}
-#header h1{
-
-}
-
-#header ul {
-  display: flex;
-  padding: 10px 0;
-}
-#header li {
-  font-size: 1.3rem;
-  margin-left: 30px;
-}
-#header li a {
-  color: #24292e;
-}
-#header li a:hover {
-  opacity: 0.7;
-}
-#header li img.icon {
-  width: 20px;
-}
-
-/*-------------------------------------------
-Mainvisual
--------------------------------------------*/
-#mainvisual {
-  margin-bottom: 80px;
-}
-#mainvisual img {
-  width: 100%;
-  max-width: 1920px;
-  height: 100%;
-  object-fit: cover;
-}
-
-#slider {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-
-/*
-スライダー矢印（共通）
-*/
-#slider .prev,
-#slider .next {
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  cursor: pointer;
-  opacity: 0.7;
-  position: absolute;
-  top: 45%;
-  transition: 0.5s;
-  z-index: 10;
-}
-#slider .prev:hover,
-#slider .next:hover {
-  opacity: 0.5;
-}
-#slider .prev::before,
-#slider .prev::after,
-#slider .next::before,
-#slider .next::after {
-  content: "";
-  display: block;
-  width: 14px;
-  height: 2px;
-  background-color: #000;
-  position: absolute;
-}
-
-/*
-スライダー左矢印
-*/
-#slider .prev {
-  left: 0;
-}
-#slider .prev::before,
-#slider .prev::after {
-  left: 12px;
-}
-#slider .prev:before {
-  top: 37%;
-  transform: rotate(-45deg);
-}
-#slider .prev:after {
-  bottom: 37%;
-  transform: rotate(45deg);
-}
-
-/*
-スライダー右矢印
-*/
-#slider .next {
-  right: 0;
-}
-#slider .next::before,
-#slider .next::after {
-  right: 12px;
-}
-#slider .next:before {
-  top: 37%;
-  transform: rotate(45deg);
-}
-#slider .next:after {
-  bottom: 37%;
-  transform: rotate(-45deg);
-}
-
-/*-------------------------------------------
-SP
--------------------------------------------*/
-@media screen and (max-width: 900px) {
-  #slider .prev,
-  #slider .next {
-    top: 40%;
-  }
-}
-
-/*-------------------------------------------
-About
--------------------------------------------*/
-#about .content {
-  display: flex;
-}
-#about img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 30px;
-}
-#about .text {
-  text-align: left;
-}
-/*-------------------------------------------
-images
--------------------------------------------*/
-
 #images{
     margin-top: 20px;
 }
-
-#images ul {
-  display: flex;
-}
-
-#images li {
-  width: 50%;
-  height: 100%;
+#images article{
+    display: flex;
 }
 
 #images img{
+    object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 300px;
 }
-
 .sec-title {
-  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
-  color: #494949;/*文字色*/
-  background: #f4f4f4;/*背景色*/
-  border-left: solid 5px #7db4e6;/*左線*/
-  border-bottom: solid 3px #d7d7d7;/*下線*/
-    text-align: left;
+    font-size: 1.5rem;
+    padding: 0.5em;/*文字周りの余白*/
+    color: #010101;/*文字色*/
+    background: #eaf3ff;/*背景色*/
+    border-bottom: solid 3px #516ab6;/*下線*/
 }
 
-/* .img-list {
+.flex-container {
     display: flex;
-} */
-
-/* #images div{
-    display: flex;
-    vertical-align: top;
-} */
-
-
-/*-------------------------------------------
-footer
--------------------------------------------*/
-#footer {
-  font-size: 0.5rem;
-  padding: 10px 0;
-  text-align: center;
 }
 
-/*-------------------------------------------
-SP
--------------------------------------------*/
-@media screen and (max-width: 600px) {
+.image-wrap{
+    margin: 10px 5px;
+}
 
-  /*-------------------------------------------
-  Mainvisual
-  -------------------------------------------*/
-  #mainvisual img {
-    height: calc(100vh - 60px);
-  }
-
-  /*-------------------------------------------
-  About
-  -------------------------------------------*/
-  #about .content {
-    flex-direction: column;
-  }
-  #about img {
-    margin-right: 0;
-  }
+.image-wrap img {
+    height: 300px;
 }

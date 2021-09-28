@@ -5,7 +5,7 @@ html {
     width: 80%;
     margin: auto;
     font-family: 'メイリオ', Meiryo,serif;
-    background-color:#dbdfe1;
+    background-color:#ffffff;
 }
 body {
     color: #383e45;
@@ -40,7 +40,7 @@ li {
     -17px -17px 26px #ffffff;
     font-family: 'RocknRoll One', sans-serif;
 }
-#header ul {
+/* #header ul {
     display: flex;
     padding: 10px 0;
 }
@@ -62,7 +62,7 @@ li {
 }
 #header a:hover::after {
     width: 100%;
-}
+} */
 .site-title {
     width: 120px;
     line-height: 1px;
@@ -73,12 +73,16 @@ li {
     display: block;
 }
 /*-------------------------------------------
-carousel
+main-img
 -------------------------------------------*/
-#carouselExampleIndicators {
-    height: 55%;
-    width: 55%;
-    margin: 1em auto;
+.main-img {
+    text-align: center;
+    margin: 1rem 1rem;
+}
+.main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /*-------------------------------------------
 about
@@ -93,40 +97,43 @@ images
 #images{
     margin-top: 20px;
 }
-#images ul {
+#images article{
     display: flex;
 }
-#images li {
-    width: 50%;
-    height: 100%;
-}
+
 #images img{
-    width: 100%;
-    height: 100%;
+    object-fit: cover;
+    width: auto;
+    height: 300px;
 }
+
 .sec-title {
     font-size: 1.5rem;
-    border-radius: 58px;
-    background: #edf1f2;
-    box-shadow:  17px 17px 26px #a4a6a7,
-    -17px -17px 26px #ffffff;
+    padding: 0.5em;/*文字周りの余白*/
+    color: #010101;/*文字色*/
+    background: #eaf3ff;/*背景色*/
+    border-bottom: solid 3px #516ab6;/*下線*/
 }
+
+#images li{
+    color: #010101;
+}
+
+
 /*-------------------------------------------
 images2
 -------------------------------------------*/
 #images2{
     margin-top: 20px;
 }
-#images2 ul {
+#images2 article{
     display: flex;
 }
-#images2 li {
-    width: 50%;
-    height: 100%;
-}
+
 #images2 img{
-    width: 100%;
-    height: 100%;
+    object-fit: cover;
+    width: auto;
+    height: 300px;
 }
 /*-------------------------------------------
 images3
@@ -134,18 +141,15 @@ images3
 #images3{
     margin-top: 20px;
 }
-#images3 ul {
+#images3 article{
     display: flex;
 }
-#images3 li {
-    width: 50%;
-    height: 100%;
-}
-#images3 img{
-    width: 100%;
-    height: 100%;
-}
 
+#images3 img{
+    object-fit: cover;
+    width: auto;
+    height: 300px;
+}
 /*-------------------------------------------
 footer
 -------------------------------------------*/
