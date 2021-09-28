@@ -11,10 +11,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script> -->
-    <!-- RocknRoll+One（フォント） -->
+    <!-- 'Fleur De Leah（フォント） -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+    <!-- Kaisei Tokumin（フォント） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
     <!-- mycss -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -29,6 +33,8 @@
                 detach_id: 'container',
                 detach_id: 'container2',
                 detach_id: 'container3',
+                detach_id: 'container4',
+                detach_id: 'container- header',
                 loop: true
             });
         });
@@ -37,8 +43,27 @@
 <body>
     <header id="header">
         <h1 class="site-title">Profile</h1>
-        <nav>
-        </nav>
+        <div id="container-header">
+            <nav>
+                <ul>
+                    <li>
+                        <input type="button" onclick="location.href='#about'" value="概要">
+                    </li>
+                    <li>
+                        <input type="button" onclick="location.href='#images'" value="詳細1">
+                    </li>
+                    <li>
+                        <input type="button" onclick="location.href='#images2'" value="詳細2">
+                    </li>
+                    <li>
+                        <input type="button" onclick="location.href='#images3'" value="詳細3">
+                    </li>
+                    <li>
+                        <input type="button" onclick="location.href='#images4'" value="詳細4">
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <!-- 画像拡大 -->
         <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -53,14 +78,13 @@
             <div class="content">
                 <h2 class="sec-title">&emsp;概要</h2>
                 <ul>
-                    <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                    </li>
+                    <li>このページでは、僕の好きなものについて紹介します。</li>
                 </ul>
             </div>
         </section>
         <section id="images">
             <div id="container">
-                <h2 class="sec-title">&emsp;詳細1</h2>
+                <h2 class="sec-title">&emsp;詳細1　～レタス702とは～</h2>
                 <article>
                     <ul>
                         <a href="./img/lettuce1.jfif">
@@ -83,15 +107,13 @@
                         </a>
                     </ul>
                 </article>
-                <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </li>
-                <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                <li>レタス702とは、格闘ゲームやボードゲームをメインに扱っているゲームバーです。
                 </li>
             </div>
         </section>
         <section id="images2">
             <div id="container2">
-                <h2 class="sec-title">&emsp;詳細2</h2>
+                <h2 class="sec-title">&emsp;詳細2　～ディズニーシーの好きなスポット～</h2>
                 <article>
                     <ul>
                         <a href="./img/mps.jpg">
@@ -109,13 +131,13 @@
                         </a>
                     </ul>
                 </article>
-                <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                <li>アメリカンウォーターフロントにある桟橋と木箱が好きです。
                 </li>
             </div>
         </section>
         <section id="images3">
-            <div>
-                <h2 class="sec-title">&emsp;詳細3</h2>
+            <div id="container3">
+                <h2 class="sec-title">&emsp;詳細3　～好きな映画について～</h2>
                 <article>
                     <ul>
                         <a href="./img/box2.jfif">
@@ -133,7 +155,31 @@
                         </a>
                     </ul>
                 </article>
-                <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                <li>
+                </li>
+            </div>
+        </section>
+        <section id="images4">
+            <div id="container4">
+                <h2 class="sec-title">&emsp;詳細4　</h2>
+                <article>
+                    <ul>
+                        <a href="./img/box2.jfif">
+                            <li><img src="./img/zangi.jpg" alt="zangi"></li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="./img/box2.jfif">
+                            <li><img src="./img/pluto.jfif" alt="img2"></li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="./img/box2.jfif">
+                            <li><img src="./img/gld1.jfif" alt="img3"></li>
+                        </a>
+                    </ul>
+                </article>
+                <li>
                 </li>
             </div>
         </section>
@@ -142,7 +188,7 @@
         <p>© 2021 T.Azumashi</p>
     </footer>
     <!-- bootsprap -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
@@ -150,6 +196,20 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-        crossorigin="anonymous"></script> -->
+        crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery-fullsizable.min.js"></script>
+    <script>
+        $(function () {
+            $('a').fullsizable({
+                detach_id: 'container',
+                detach_id: 'container2',
+                detach_id: 'container3',
+                detach_id: 'container4',
+                detach_id: 'container- header',
+                loop: true
+            });
+        });
+    </script>
 </body>
 </html>

@@ -35,39 +35,43 @@ li {
     top: 0;
     z-index: 100;
     border-radius: 58px;
-    background: #edf1f2;
-    box-shadow:  17px 17px 26px #a4a6a7,
-    -17px -17px 26px #ffffff;
-    font-family: 'RocknRoll One', sans-serif;
+    background: #182158;
+    font-family: 'Fleur De Leah', cursive;
 }
-/* #header ul {
+#header ul {
     display: flex;
-    padding: 10px 0;
+    padding: 7px 0;
 }
 #header li {
     font-size: 1.3rem;
-    margin-left: 30px;
+    margin-left: 20px;
 }
-#header li a {
-    color: #24292e;
+#header input {
+    display       : inline-block;
+    border-radius : 20%;          /* 角丸       */
+    font-size     : 20pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 12px 12px;   /* 余白       */
+    background    : #182158;     /* 背景色     */
+    color         : #b4db03;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    font-family: 'Kaisei Tokumin', serif;
+    font-weight: bold;
+    letter-spacing: 0.2em;
 }
-#header a::after {
-    border-bottom: solid 5px #000;
-    bottom: 0;
-    content: "";
-    display: block;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    width: 0;
+#header input:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #182158;     /* 背景色     */
+  background    : #b4db03;     /* 文字色     */
 }
-#header a:hover::after {
-    width: 100%;
-} */
 .site-title {
     width: 120px;
     line-height: 1px;
     padding: 10px 0;
     font-size: 2rem;
+    color: #b4db03;
 }
 .site-title a {
     display: block;
@@ -151,6 +155,21 @@ images3
     height: 300px;
 }
 /*-------------------------------------------
+images4
+-------------------------------------------*/
+#images4{
+    margin-top: 20px;
+}
+#images4 article{
+    display: flex;
+}
+
+#images4 img{
+    object-fit: cover;
+    width: auto;
+    height: 300px;
+}
+/*-------------------------------------------
 footer
 -------------------------------------------*/
 #footer {
@@ -182,5 +201,20 @@ SP
     width: 100%;
     height: 100%;
     margin: 1rem 0;
+}
+    #header input {
+    display       : none;
+}
+#images article{
+    display: block;
+}
+#images2 article{
+    display: block;
+}
+#images3 article{
+    display: block;
+}
+#images4 article{
+    display: block;
 }
 }
